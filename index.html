@@ -1,2 +1,61 @@
-<h1>Hello 👋</h1>
-<p>Welcome to my website</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Website</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  color:white;
+  text-align:center;
+}
+
+.hero{
+  padding:100px 20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.15);
+  margin:20px auto;
+  padding:20px;
+  max-width:500px;
+  border-radius:15px;
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Welcome ✨</h1>
+  <p>A small website made by me.</p>
+</div>
+
+<div class="card">
+  <h2>About Me</h2>
+  <p>I enjoy music, movies, travel and learning new things.</p>
+</div>
+
+<div class="card">
+  <h2>Fun Button</h2>
+  <button onclick="showMsg()">Click Me</button>
+  <p id="msg"></p>
+</div>
+
+<script>
+function showMsg(){
+  document.getElementById("msg").innerHTML =
+  "Thanks for visiting 😊";
+}
+</script>
+
+</body>
+</html>
